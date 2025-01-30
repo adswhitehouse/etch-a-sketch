@@ -1,5 +1,7 @@
 const container = document.querySelector(".container");
 
+const containerHeight = 640;
+
 for (let i = 1; i < 257; i++) {
   const div = document.createElement("div");
   div.classList.add("square");
@@ -20,3 +22,5 @@ for (let i = 0; i < divsArray.length; i++) {
     )}, ${randomInteger(255)}, ${randomInteger(255)})`;
   });
 }
+
+const button = document.querySelector("button");

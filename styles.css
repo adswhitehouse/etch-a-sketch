@@ -16,8 +16,8 @@ html {
   text-size-adjust: none;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -26,18 +26,27 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
-img, picture, svg {
+img,
+picture,
+svg {
   max-width: 100%;
   display: block;
 }
 
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
 }
@@ -45,21 +54,41 @@ textarea, select {
 
 .square {
   border: 1px solid grey;
-  height: 30px;
-  width: 30px;
+  flex: 1 1 40px;
 }
 
 .game {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
-  padding: 1rem;
+  padding-inline: 1rem;
+  gap: 1rem;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  width: 495px;
-  gap: 1px;
+  width: 640px;
+  height: 640px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid gray;
+  transition: 0.5s;
+  box-shadow: 0 2px 2px 0;
+}
+
+.btn:hover {
+  border: 2px solid black;
+  transition: none;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }
