@@ -10,10 +10,6 @@ function randomInteger(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-let r = randomInteger(255);
-let g = randomInteger(255);
-let b = randomInteger(255);
-
 let divs = container.children;
 let divsArray = Array.from(divs);
 
