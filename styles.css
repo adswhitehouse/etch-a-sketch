@@ -57,6 +57,11 @@ select {
   flex: 1 1 40px;
 }
 
+.newSquare {
+  border: 1px solid gray;
+  flex: 1 1 auto;
+}
+
 .game {
   display: flex;
   justify-content: center;
